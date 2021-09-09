@@ -1,0 +1,23 @@
+nav {
+  background-color: #4056A1;
+    height: 120px;
+    width: 100%;
+    color: #FFFFFF;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+.navLeft {
+  font-family: 'Bungee', cursive;
+  font-size: 1.5em
+}
+
+.navRight {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
