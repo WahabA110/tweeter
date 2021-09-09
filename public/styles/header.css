@@ -1,0 +1,32 @@
+/* header element contains profile picture and user name*/
+header {
+  height: 400px;
+  width: 100%;
+  background-color: #d18400;
+  background-image: "http://www.transparenttextures.com/patterns/asfalt-dark.png";
+  z-index: 2;
+}
+
+.centerImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+} 
+
+.centerName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+/* 
+.backgroundImage {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+} */
