@@ -1,0 +1,39 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-counter {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+button {
+  font-family: 'Bungee';
+  background-color: steelblue;
+}
+
+output {
+  font-family: 'Bungee';
+}
+
+.new-tweet {
+  width: 80%;
+}
+
+.linebreak {
+  height: 3px;
+  background-color: black;
+  width: auto;
+}
+
+textarea {
+  border: none;
+  background-color: #f4f1ec;
+}
+
+.counter.limit {
+  color: red;
+}
