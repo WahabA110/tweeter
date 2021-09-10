@@ -13,6 +13,7 @@ form {
 button {
   font-family: 'Bungee';
   background-color: steelblue;
+  border: 0px;
 }
 
 output {
@@ -20,7 +21,6 @@ output {
 }
 
 .new-tweet {
-  width: 80%;
   margin-bottom: 50px;
 }
 
