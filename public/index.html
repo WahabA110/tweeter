@@ -35,6 +35,7 @@
 
 <body>
   <!-- Top nav bar (fixed) -->
+  <!-- Styling for this section can be found in nav.css -->
   <nav>
     <div class="navLeft">
       <span>tweeter</span>
@@ -45,7 +46,8 @@
     </div>
   </nav>
 
-  <header>
+  <!-- Styling in this section can be found in header.css -->
+  <header class="profile">
     <div class="centerImage">
         <img src="/images/profile-hex.png"> 
     </div>
@@ -56,7 +58,9 @@
 </header>
 
   <!-- Page-specific (main) content here -->
+  <!-- Styling for container class can be found in layout.css -->
   <main class="container">
+    <!-- Styling can be found in new-tweet.css -->
     <section class="new-tweet">
       <h2>Compose Tweet</h2>
       <form action="/tweets" method="POST">
@@ -70,6 +74,29 @@
         </div>
       </form>
     </section>
+
+    <!-- Styling can be found in show-tweets.css -->
+    <section>
+      <article>
+        <header>
+          <h5>John Hancock</h5>
+          <h5>@userID</h5>
+        </header>
+        <p>
+          I'm baby jean shorts letterpress skateboard leggings tumeric pug. Gluten-free forage palo santo.
+        </p>
+      <div class="linebreak"></div>
+      <footer>
+        <h6>Date: 2 days ago</h6>
+        <div>
+          <i class="fas fa-flag"></i>
+          <i class="fas fa-retweet"></i>
+          <i class="fas fa-heart"></i>
+        </div>
+      </footer>
+    </article>
+  </section>
+    
   </main>
 </body>
 
