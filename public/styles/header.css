@@ -1,5 +1,5 @@
 /* header element contains profile picture and user name*/
-header {
+.profile {
   height: 400px;
   width: 100%;
   background-color: #d18400;
