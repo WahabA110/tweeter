@@ -31,6 +31,12 @@ $(document).ready(function() {
     }
   }
 
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };  
+
   const createTweetElement = (tweetData) => {
     let $tweet = `
     <article class="tweetArticle">
@@ -39,7 +45,7 @@ $(document).ready(function() {
         <h5>${tweetData.user.handle}</h5>
       </header>
       <p>
-        ${tweetData.content.text}
+        ${escape(tweetData.content.text)}
       </p>
       <div class="linebreak"></div>
       <footer>
@@ -76,11 +82,9 @@ $(document).ready(function() {
       console.log('res:', res);
       $('textarea').val("");
       loadTweets();
-      renderTweets(data);
       $('.counter').val('140');
     })
   });
   loadTweets();
-  renderTweets(data);
 
 });
