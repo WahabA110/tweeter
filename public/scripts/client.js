@@ -66,11 +66,11 @@ $(document).ready(function() {
     event.preventDefault();
     const text = $('#tweet-text').val();
     if (text.length > 140) {
-      alert('Character length is too long. Please shorten.');
+      $('.error').html('Message is too long').slideDown('slow');
       return;
     }
     if (text.length === 0) {
-      alert('No text inputted. Please input before submitting.');
+      $('.error').html('Message is too short').slideDown('slow');
       return;
     }
     $.ajax({
@@ -83,6 +83,7 @@ $(document).ready(function() {
       $('textarea').val("");
       loadTweets();
       $('.counter').val('140');
+      $('.error').slideUp('slow').html("");
     })
   });
   loadTweets();
