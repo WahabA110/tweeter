@@ -38,3 +38,8 @@ textarea {
 .counter.limit {
   color: red;
 }
+
+.error {
+  display: none;
+  color: red;
+}
