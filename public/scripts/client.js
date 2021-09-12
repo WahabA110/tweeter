@@ -41,7 +41,10 @@ $(document).ready(function() {
     let $tweet = `
     <article class="tweetArticle">
       <header class="currentUser">
-        <h5>${tweetData.user.name}</h5>
+        <section class="userImgName">
+          <img src="${tweetData.user.avatars}">
+          <h5>${tweetData.user.name}</h5>
+        </section>
         <h5>${tweetData.user.handle}</h5>
       </header>
       <p>
