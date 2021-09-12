@@ -6,7 +6,9 @@ It shows the client a single page, that contains tweets from other users, and al
 
 ## Final Product
 
+!["Screenshot of the header and tweet box"](https://github.com/WahabA110/tweeter/blob/master/docs/header-and-tweetbox.png?raw=true)
 
+!["Screenshot of tweets"](https://github.com/WahabA110/tweeter/blob/master/docs/tweets.png?raw=true)
 
 ## Getting Started
 
