@@ -40,3 +40,13 @@ footer {
 .fa-heart:hover {
   color: #BF391C;
 }
+
+.userImgName {
+  display: flex;
+}
+
+.userImgName img {
+  align-self: center;
+  height: 50px;
+  width: 50px;
+}
