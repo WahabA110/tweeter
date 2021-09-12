@@ -55,42 +55,39 @@
     </div>
   </nav>
   <section class="respond">
-  <!-- Styling in this section can be found in header.css -->
-  <header class="profile">
-    <div class="centerImage">
-        <img src="/images/profile-hex.png"> 
-        <h2>John Hancock</h2>
-    </div>
-    <br>
-</header>
+    <!-- Styling in this section can be found in header.css -->
+    <header class="profile">
+      <div class="centerImage">
+          <img src="/images/profile-hex.png"> 
+          <h2>John Hancock</h2>
+      </div>
+      <br>
+    </header>
 
-  <!-- Page-specific (main) content here -->
-  <!-- Styling for container class can be found in layout.css -->
-  <main class="container">
-    <!-- Styling can be found in new-tweet.css -->
-    <section class="new-tweet">
-      <h2>Compose Tweet</h2>
-      <section>
-        <h4 class="error"></h4>
+    <!-- Page-specific (main) content here -->
+    <!-- Styling for container class can be found in layout.css -->
+    <main class="container">
+      <!-- Styling can be found in new-tweet.css -->
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+        <section>
+          <h4 class="error"></h4>
+        </section>
+        <form action="/tweets" method="POST">
+          <label for="tweet-text"><strong>What are you humming about?</strong></label>
+          <textarea name="text" id="tweet-text"></textarea>
+          <div class="linebreak"></div>
+          <div class="button-counter">
+            <button type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
       </section>
-      <form action="/tweets" method="POST">
-        <label for="tweet-text"><strong>What are you humming about?</strong></label>
-        <textarea name="text" id="tweet-text"></textarea>
-        <div class="linebreak">
-        </div>
-        <div class="button-counter">
-          <button type="submit">Tweet</button>
-          <output name="counter" class="counter" for="tweet-text">140</output>
-        </div>
-      </form>
-    </section>
 
-    <!-- Styling can be found in show-tweets.css -->
-    <section id="tweet-container">
-
-    </section>
+      <!-- Styling can be found in show-tweets.css -->
+      <section id="tweet-container"></section>
+    </main>
   </section>
-  </main>
 </body>
 
 </html>
